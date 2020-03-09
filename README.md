@@ -1,2 +1,2 @@
 # jeffindenver.github.io
-Portfolio respository
+Portfolio repository
