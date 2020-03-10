@@ -8,54 +8,43 @@
   <meta name="description" content="Personal Portfolio">
   <meta name="keywords" content="html, css, Bellevue University, web 330, portfolio">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
 
-  <div class="container">
+  <div>
     <canvas id="backCanvas"></canvas>
     <canvas id="foreCanvas"></canvas>
 
     <overlay id="overlay">
-      <h1>Jeffrey Shepherd</h1>
-      <h2 class="tagline">cool <br>refreshing</h2>
-
-      <div id="gallery">
-
-        <div>
-          <a target="_blank" href="https://jeffindenver.github.io/bioSite/"><img src="./images/bioSite-200x200.png" alt="Bio Site Image"></a>
-        </div>
-
-        <div>
-          <a target="_blank" href="https://jeffindenver.github.io/bioSite/prototype/"><img src="./images/bio-site-prototype200x200.png"
-              alt="Bio Site Prototype Image"></a></div>
-
-        <div>
-          <a target="_blank" href="https://github.com/jeffindenver/web-231/"><img src="./images/web231-200x200.png"
-              alt="Web 231 Image"></a></div>
-
-        <div>
-          <a target="_blank" href="https://github.com/jeffindenver/web-330/"><img src="./images/web330-200x200.png"
-              alt="Web 330 Image"></a></div>
-
-        <div>
-          <a target="_blank" href="images/portfolio-prototpye400x400.jpg"><img src="./images/portfolio-prototpye200x200.jpg"
-              alt="Portfolio Prototype Image"></a></div>
-
+      <div id="landing">
+        <h1>Jeffrey Shepherd</h1>
+        <h2 class="tagline">cool <br>refreshing</h2>
+        <button id="toGallery">VIEW GALLERY</button>
+        <div id="bottom"></div>
       </div>
 
-      <div id="bottom"></div>
+      <div id="gallery">
+        <a target="_blank" href="https://jeffindenver.github.io/bioSite/"><img src="./images/bioSite-200x200.png"
+            alt="Bio Site Image"></a>
 
+        <a target="_blank" href="https://jeffindenver.github.io/bioSite/prototype/"><img
+            src="./images/bio-site-prototype200x200.png" alt="Bio Site Prototype Image"></a>
+
+        <a target="_blank" href="https://github.com/jeffindenver/web-231/"><img src="./images/web231-200x200.png"
+            alt="Web 231 Image"></a>
+
+        <a target="_blank" href="https://github.com/jeffindenver/web-330/"><img src="./images/web330-200x200.png"
+            alt="Web 330 Image"></a>
+
+        <a target="_blank" href="images/portfolio-prototpye400x400.jpg"><img src="./images/portfolio-prototpye200x200.jpg"
+            alt="Portfolio Prototype Image"></a>
+            <button id="toLanding">RETURN</button>
+      </div>
     </overlay>
-    <div>
-
-    </div>
-
-
   </div>
 
 
@@ -200,6 +189,19 @@
 
     draw();
     startTimers();
+
+    $(function () {
+      $("#toGallery").click(() => {
+        $("#landing").fadeOut(1000);
+        $("#gallery").css({"display": "flex"});
+      });
+
+      $("#toLanding").click(() => {
+        $("#landing").fadeIn(1000);
+        $("#gallery").fadeOut(1000);
+      })
+
+    });
 
   </script>
 

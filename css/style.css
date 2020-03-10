@@ -1,6 +1,6 @@
 body {
   display: block;
-  background-color: #181719;
+  background-color: #ffffff;
   font-family: sans-serif;
   margin: 0;
   padding: 0;
@@ -53,16 +53,29 @@ img {
   padding: 5px;
 }
 
-.container {
+#toGallery,
+#toLanding {
+  cursor: pointer;
+  background: none;
+  border: none;
+  border-top: solid;
+  color: #efac69;
+  font-size: 3.157em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+}
+
+#landing {
   position: relative;
 }
 
 #gallery {
- display: flex;
- flex-flow: row wrap;
- justify-content: space-evenly;
- margin-top: 40px;
- padding: 20px;
+  padding-top: 5%;
+  width: 100%;
+  display: none;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #backCanvas {
