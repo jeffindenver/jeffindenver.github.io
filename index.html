@@ -40,9 +40,10 @@
         <a target="_blank" href="https://github.com/jeffindenver/web-330/"><img src="./images/web330-200x200.png"
             alt="Web 330 Image"></a>
 
-        <a target="_blank" href="images/portfolio-prototpye400x400.jpg"><img src="./images/portfolio-prototpye200x200.jpg"
-            alt="Portfolio Prototype Image"></a>
-            <button id="toLanding">RETURN</button>
+        <a target="_blank" href="images/portfolio-prototpye400x400.jpg"><img
+            src="./images/portfolio-prototpye200x200.jpg" alt="Portfolio Prototype Image"></a>
+        <br>
+        <button id="toLanding">RETURN</button>
       </div>
     </overlay>
   </div>
@@ -193,7 +194,9 @@
     $(function () {
       $("#toGallery").click(() => {
         $("#landing").fadeOut(1000);
-        $("#gallery").css({"display": "flex"});
+        $("#gallery").css({
+          "display": "flex"
+        });
       });
 
       $("#toLanding").click(() => {
