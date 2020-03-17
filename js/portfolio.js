@@ -148,9 +148,7 @@ let eventID = startTimers();
 $(function () {
   $("#toGallery").click(() => {
     $("#landing").fadeOut(1000);
-    $("#gallery").css({
-      "display": "flex"
-    });
+    $("#gallery").fadeIn(1000);
   });
 
   $("#toLanding").click(() => {
