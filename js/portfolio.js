@@ -143,7 +143,7 @@ function getRandomNumber(range) {
 }
 
 draw();
-let eventID = startTimers();
+let animationID = startTimers();
 
 $(function () {
   $("#toGallery").click(() => {
@@ -155,5 +155,20 @@ $(function () {
     $("#landing").fadeIn(1000);
     $("#gallery").fadeOut(1000);
   })
+
+  $("#hamburger").click(() => {
+    $("#myModal").css("display", "block");
+  });
+
+  $(".close").click(() => {
+    $("#myModal").css("display", "none");
+  });
+
+  $(window).click(() => {
+    console.log("window clicked on " + event.target.toString());
+    if (event.target === document.getElementById("myModal")) {
+      $("#myModal").fadeOut(1000);
+    }
+  });
 
 });

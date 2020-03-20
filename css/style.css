@@ -74,12 +74,9 @@ a img {
   }
 }
 
-.hamburger-holder img {
-  max-width: 40px;
-  max-height: 40px;
-}
-
 .hamburger-holder {
+  min-width: 40px;
+  min-height: 40px;
   cursor: pointer;
   display: block;
   position: fixed;
@@ -92,6 +89,12 @@ a img {
   text-transform: uppercase;
   margin-top: 20px;
   padding: 5px;
+}
+
+#hamburger {
+  border: none;
+  width: 40px;
+  height: 40px;
 }
 
 #toGallery,
@@ -123,7 +126,7 @@ a img {
 }
 
 #landing {
-  margin-top: 20%;
+  margin-top: 15%;
   position: relative;
 }
 
@@ -137,6 +140,10 @@ a img {
   z-index: -2;
 }
 
+#foreCanvas {
+  z-index: -1;
+}
+
 #bottom {
   display: block;
   z-index: 3;
@@ -148,10 +155,6 @@ a img {
   background-image: url("../images/two-beer-mugs.png");
   background-repeat: no-repeat;
   background-position: center;
-}
-
-#foreCanvas {
-  z-index: -1;
 }
 
 #overlay {
@@ -172,4 +175,43 @@ a img {
     top: 2%;
     overflow-y: scroll;
   }
+}
+
+/******************************************************************************
+* Modal menu
+*******************************************************************************/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 6;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin-left: 2%;
+  margin-top: 5%;
+  padding: 5px;
+  border: 1px solid #888888;
+  width: 20%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
