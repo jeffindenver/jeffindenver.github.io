@@ -1,0 +1,157 @@
+body {
+  display: block;
+  background-color: #ffffff;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #2b2921;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #fc62c9;
+  font-size: 4.209em;
+  font-family: 'Fugaz One', cursive;
+  text-shadow: 2px 2px 1px #000000;
+}
+
+h2 {
+  color: #8dc162;
+  font-size: 3.157em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+}
+
+h1,
+h2 {
+  padding: 0;
+  margin: 0;
+}
+
+canvas {
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+a img {
+  border-style: solid;
+  border-width: 2px;
+  border-color: darkslategray;
+}
+
+@media only screen and (max-width: 400px) {
+  a img {
+    max-width: 100px;
+  }
+}
+
+.container {
+  min-height: 100%;
+}
+
+.hamburger-holder img {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.hamburger-holder {
+  display: block;
+  position: fixed;
+  top: 10px;
+  left: 20px;
+}
+
+.tagline {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+@media only screen and (max-width: 414px) {
+  .tagline {
+    font-size: 2.369em;
+  }
+}
+
+#toGallery,
+#toLanding {
+  cursor: pointer;
+  background: none;
+  border: none;
+  border-top: solid;
+  padding-top: 20px;
+  color: #8dc162;
+  font-size: 3.157em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+}
+
+#landing {
+  position: relative;
+}
+
+#gallery {
+  padding-top: 5%;
+  width: 100%;
+  display: none;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media only screen and (max-width: 414px) {
+  #gallery {
+    padding: 0;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+}
+
+#backCanvas {
+  z-index: -2;
+}
+
+#bottom {
+  display: block;
+  z-index: 3;
+  min-height: 400px;
+  min-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  background-image: url("../images/mint-ice-cream-cone400x400.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#foreCanvas {
+  z-index: -1;
+}
+
+#overlay {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  top: 25%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.0);
+  z-index: 5;
+}
+
+@media only screen and (max-width: 414px) {
+  #overlay {
+    top: 2%;
+    overflow-y: scroll;
+  }
+}

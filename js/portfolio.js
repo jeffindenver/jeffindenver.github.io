@@ -146,15 +146,26 @@ draw();
 let animationID = startTimers();
 
 $(function () {
-  $("#toGallery").click(() => {
-    $("#landing").fadeOut(1000);
-    $("#gallery").fadeIn(1000);
+  let currentScene = $("#landing");
+
+  $(".toGallery").click(() => {
+    currentScene.fadeOut(1000);
+    $("#gallery").fadeIn(2000);
+    currentScene = $("#gallery");
   });
 
-  $("#toLanding").click(() => {
-    $("#landing").fadeIn(1000);
-    $("#gallery").fadeOut(1000);
-  })
+  $(".toLanding").click(() => {
+    currentScene.fadeOut(1000);
+    $("#landing").fadeIn(2000);
+    currentScene = $("#landing");
+  });
+
+  $("#about").click(() => {
+    currentScene.fadeOut(1000);
+    $("#about-me").css("display", "flex");
+    currentScene = $("#about-me");
+    $("#myModal").css("display", "none");
+  });
 
   $("#hamburger").click(() => {
     $("#myModal").css("display", "block");

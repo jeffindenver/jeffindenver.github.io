@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Jeff Shepherd Portfolio</title>
+  <meta name="author" content="Jeff Shepherd">
+  <meta name="description" content="Personal Portfolio">
+  <meta name="keywords" content="html, css, Bellevue University, web 330, portfolio">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Fugaz+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <canvas id="backCanvas"></canvas>
+    <canvas id="foreCanvas"></canvas>
+
+    <overlay id="overlay">
+      <div class="hamburger-holder">
+        <img src="images/hamburger40x40.png" alt="menu control">
+      </div>
+
+      <div id="landing">
+        <h1>Jeffrey Shepherd</h1>
+        <h2 class="tagline">minty fresh <br> software developer</h2>
+        <button id="toGallery">VIEW GALLERY</button>
+        <div id="bottom"></div>
+      </div>
+
+      <div id="gallery">
+        <a target="_blank" rel="noopener" href="https://jeffindenver.github.io/bioSite/">
+          <img src="./images/bioSite-200x200.png" alt="Bio Site Image"></a>
+
+        <a target="_blank" rel="noopener" href="https://jeffindenver.github.io/bioSite/prototype/">
+          <img src="./images/bio-site-prototype200x200.png" alt="Bio Site Prototype Image"></a>
+
+        <a target="_blank" rel="noopener" href="https://github.com/jeffindenver/web-231/">
+          <img src="./images/web231-200x200.png" alt="Web 231 Image"></a>
+
+        <a target="_blank" rel="noopener" href="https://github.com/jeffindenver/web-330/">
+          <img src="./images/web330-200x200.png" alt="Web 330 Image"></a>
+
+        <a target="_blank" rel="noopener" href="images/portfolio-prototpye400x400.jpg">
+          <img src="./images/portfolio-prototype200x200.jpg" alt="Portfolio Prototype Image"></a>
+
+        <button id="toLanding">RETURN</button>
+      </div>
+    </overlay>
+  </div>
+
+
+
+  <script>
+    let screenWidth = window.innerWidth;
+    let screenHeight = window.innerHeight;
+
+    let backCanvas = document.getElementById("backCanvas");
+    let foreCanvas = document.getElementById("foreCanvas");
+
+    let backContext = backCanvas.getContext("2d");
+    let foreContext = foreCanvas.getContext("2d");
+
+    let squares = [];
+
+    function draw() {
+      backCanvas.setAttribute("width", screenWidth);
+      backCanvas.setAttribute("height", screenHeight);
+
+      foreCanvas.setAttribute("width", screenWidth);
+      foreCanvas.setAttribute("height", screenHeight);
+
+      let gradient = backContext.createLinearGradient(0, 0, 0, screenHeight);
+
+      gradient.addColorStop(0, "#ffffff");
+      gradient.addColorStop(1, "#93f981")
+
+      backContext.fillStyle = gradient;
+      backContext.fillRect(0, 0, screenWidth, screenHeight);
+
+      const numOfSquares = 1600;
+      let color = "#ddffd6";
+
+      for (let i = 0; i < numOfSquares; i++) {
+        let dimension = 2;
+        let startX = getRandomNumber([0, screenWidth]);
+        let startY = getRandomNumber([300, screenHeight]);
+        squares.push(
+          new Component(dimension, dimension, color, startX, startY));
+      }
+    }
+
+    function Component(width, height, color, x, y) {
+      this.width = width;
+      this.height = height;
+      this.angle = 0;
+      this.x = x;
+      this.y = y;
+      this.color = color;
+
+      this.setX = function (value) {
+        if (value > screenWidth) {
+          value = 0;
+        }
+        if (value < 0) {
+          value = screenWidth;
+        }
+        this.x = value;
+      };
+
+      this.setY = function (value) {
+        if (value > screenHeight) {
+          value = 0;
+        }
+        if (value < 0) {
+          value = screenHeight;
+        }
+        this.y = value;
+      }
+
+      this.update = function () {
+        foreContext.fillStyle = this.color;
+        foreContext.fillRect(this.x, this.y, this.width, this.height);
+      }
+    }
+
+
+    function updateForeground() {
+      const colors = ["#ffffff", "#ddffd6", "#b1e5a9"]
+
+      squares.forEach(item => {
+        item.color = colors[getRandomNumber([0, 4])];
+        item.update();
+      });
+    }
+
+    function startTimers() {
+      let delay = 200;
+      let animationID;
+
+      function startAnimation(color) {
+        console.log(`${color} animation begun.`);
+        animationID = setInterval(() => {
+          updateForeground();
+        }, delay);
+      }
+
+      startAnimation("mint");
+    }
+
+    function getRandomNumber(range) {
+      let max = range[1];
+      let min = range[0];
+      let diff = max - min;
+      return Math.floor((Math.random() * diff) + min);
+    }
+
+    draw();
+    startTimers();
+
+    $(function () {
+      $("#toGallery").click(() => {
+        $("#landing").fadeOut(1000);
+        $("#gallery").css({
+          "display": "flex"
+        });
+      });
+
+      $("#toLanding").click(() => {
+        $("#landing").fadeIn(1000);
+        $("#gallery").fadeOut(1000);
+      })
+
+    });
+
+  </script>
+
+</body>
+
+</html>
