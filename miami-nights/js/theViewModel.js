@@ -15,7 +15,6 @@ function ViewModel(model) {
 
   "use strict";
 
-  //quiz is the data
   let quiz = model.getData();
 
   let observables = {
@@ -46,8 +45,8 @@ function ViewModel(model) {
 
   this.report = function () {
     setAnswers();
-    let aScore = getUserScore();
-    let aRank = getRank(aScore);
+    const aScore = getUserScore();
+    const aRank = getRank(aScore);
     return {
       score: aScore,
       rank: aRank
@@ -55,7 +54,7 @@ function ViewModel(model) {
   };
 
   function getUserScore() {
-    let maxScore = 10;
+    const maxScore = 10;
     let score = 0;
     quiz.forEach((item) => {
       if (item.isCorrect()) {
