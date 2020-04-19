@@ -1,0 +1,178 @@
+body {
+  display: block;
+  background-color: #181719;
+  font-family: serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+canvas {
+  width: 100%;
+  position: static;
+  z-index: -1;
+}
+
+div {
+  width: 100%;
+  margin: auto;
+  padding: 0;
+}
+
+h1 {
+  color: #840b82;
+  font-family: 'Racing Sans One', cursive;
+  font-size: 96px;
+  text-shadow: 2px 2px #02f8fc;
+}
+
+h1,
+h2 {
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  color: white;
+}
+
+label {
+  font-size: 1.5em;
+  text-align: left;
+  color: #fff;
+  margin: 0 auto;
+}
+
+li {
+  text-align: left;
+  list-style-type: none;
+}
+
+ul {
+  width: 80%;
+  margin: auto;
+}
+
+table {
+  text-align: left;
+  vertical-align: text-bottom;
+}
+
+td {
+  padding: 10px;
+}
+
+tr {
+  border-bottom: 1px solid;
+}
+
+.btn {
+  position: relative;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.button {
+  position: absolute;
+  float: right;
+  font-size: 1.25rem;
+  font-family: Arial, Helvetica, sans-serif;
+  left: 85%;
+  top: 70%;
+  background-color: darkorange;
+  border-color: darkorange;
+  border-radius: .5em;
+}
+
+.carousel-inner {
+  padding-top: 5%;
+  align-items: center;
+}
+
+.carousel-item {
+  position: relative;
+  text-align: left;
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+.fa-check {
+  color: #00FF00;
+  vertical-align: -30%;
+}
+
+.fa-times {
+  color: #fe0000;
+}
+
+.instructions {
+  width: 60%;
+  font-size: 2rem;
+  margin-top: 10%;
+  display: block;
+}
+
+.section {
+  max-width: 800px;
+}
+
+.summary {
+  max-height: 600px;
+  max-width: 60%;
+  border-radius: 10px;
+  padding: 2%;
+  background-color: rgba(0, 0, 0, 0.3);
+  overflow: auto;
+  margin: auto;
+  margin-top: 5%;
+  display: none;
+}
+
+.summary h2 {
+  background-color: rgba(0, 0, 0, 0.5);;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+#retry {
+  display: none;
+}
+
+#submit {
+  display: none;
+}
+
+#myCarousel {
+  padding: 0;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 80%;
+  height: 400px;
+  font-size: 1.5em;
+  display: none;
+  margin-top: 8%;
+}
+
+#overlay {
+  position: fixed;
+  display: block;
+  width: 100%;
+  min-height: 90%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 2;
+}
+
+#summaryCanvas {
+  margin: auto;
+  margin-top: 10%;
+  max-height: 500px;
+  max-width: 60%;
+  border-radius: 10px;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}

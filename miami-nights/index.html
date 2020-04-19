@@ -1,0 +1,88 @@
+<!--
+===============================================================================
+; Title:  index.html
+; Author: Jeff Shepherd, Janet Blohn
+; Modified By:
+; Date:   3/14/2020
+; Description: View for the JavaScript Quiz
+===============================================================================
+-->
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+  <title>Jeff and Janet Javascript Trivia</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type='text/javascript' src='../knockout-3.5.1.js'></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div>
+    <h1>Miami Nights!</h1>
+    <h2>The 80's-Retro JavaScript Quiz</h2>
+  </div>
+  <div id="overlay">
+
+    <div class="section instructions">
+      <h2 style="font-size: larger;">Instructions</h2>
+      <p class="text-light">There are 10 multiple choice questions. Please choose one answer for each. There is no time
+        limit on this test.
+        Click the "Begin" button to start.</p>
+    </div>
+
+    <div id="myCarousel" class="section carousel slide text-light" data-ride="false" data-interval="false">
+
+      <div id="innerCarousel" class="carousel-inner"></div>
+
+      <a class="carousel-control-prev padded" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next padded" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <div class="section summary text-light">
+      <h2 id="result"></h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Question</th>
+            <th>Correct Answer</th>
+            <th>Your Answer</th>
+            <th>Result</th>
+          </tr>
+        </thead>
+        <tbody id="summaryTableBody"></tbody>
+      </table>
+    </div>
+
+    <div>
+      <button id="begin" class="button">BEGIN</button>
+      <button id="submit" class="button">SUBMIT</button>
+      <button id="retry" class="button">RETRY</button>
+    </div>
+    <canvas id="summaryCanvas" width="1000" height="800"></canvas>
+  </div>
+
+  <canvas id="theCanvas"></canvas>
+
+  <script src="js/canvas-script.js"></script>
+  <script src="js/results-animation.js"></script>
+  <script src="js/theModel.js"></script>
+  <script src="js/theViewModel.js"></script>
+  <script src="js/controller.js"></script>
+
+</body>
+
+</html>
