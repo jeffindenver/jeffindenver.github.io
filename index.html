@@ -30,23 +30,21 @@
       <div id="myModal" class="modal">
         <div class="modal-content">
           <button id="about">About</button>
-          <!-- <button id="minty">
-            <a target="_blank" rel="noopener" href="minty/minty.html">Mint Ice Cream</a>
-          </button> -->
+          <button id="diagrams">Diagrams</button>
+          <button id="presentations">Presentations</button>
           <span class="close">&times;</span>
         </div>
       </div>
 
       <div id="landing">
         <h1>Jeffrey Shepherd</h1>
-        <h2 class="tagline">cool <br>refreshing</h2>
+        <h2 class="tagline">Cool and Refreshing</h2>
         <button class="toGallery">VIEW GALLERY</button>
         <div id="bottom"></div>
       </div>
 
-      <div id="gallery">
-        <h2 class="tagline">gallery</h2>
-
+      <div id="gallery" class="image-gallery">
+        <h2 class="tagline">Gallery</h2>
         <div class="flow-container">
           <a target="_blank" rel="noopener" href="https://jeffindenver.github.io/bioSite/">
             <img src="./images/bioSite-200x200.png" alt="Bio Site Image"></a>
@@ -59,30 +57,48 @@
         <div class="flow-container">
           <a target="_blank" rel="noopener" href="https://github.com/jeffindenver/web-330/">
             <img src="./images/web330-200x200.png" alt="Web 330 Image"></a>
-            <a target="_blank" rel="noopener" href="images/portfolio-prototpye400x400.jpg">
-              <img src="./images/portfolio-prototype200x200.jpg" alt="Portfolio Prototype Image"></a>
-            <a target="_blank" rel="noopener" href="miami-nights/index.html">
-              <img src="./images/miami-nights-thumb200x200.png" alt="Miami Nights Quiz"></a>
+          <a target="_blank" rel="noopener" href="images/portfolio-prototpye400x400.jpg">
+            <img src="./images/portfolio-prototype200x200.jpg" alt="Portfolio Prototype Image"></a>
+          <a target="_blank" rel="noopener" href="miami-nights/index.html">
+            <img src="./images/miami-nights-thumb200x200.png" alt="Miami Nights Quiz"></a>
         </div>
 
         <div class="flow-container">
-            <button class="toLanding">RETURN</button>
+          <button class="toLanding">RETURN</button>
         </div>
-
       </div>
 
       <div id="about-me">
-        <h2>Hellooo!</h2>
+        <h2>Hello!</h2>
         <img class="portrait center" src="./images/jeff-shepherd.jpg" alt="a photograph of the author">
         <p class="text center">I'm Jeff. Pleased to meet you. I'm not too serious of a person, but I am serious about
-          coding. Very serious, but I have great fun doing it. If it were any more fun for me, it would be illegal. Hope you like it!
+          coding. Very serious, but I have great fun doing it. If it were any more fun for me, it would be illegal. Hope
+          you like it!
         </p>
         <button class="center toLanding">Return</button>
       </div>
+
+      <div class="image-gallery" id="diagrams-target">
+        <h2 class="flow-container">Diagrams</h2>
+      </div>
+
+      <div class="image-gallery" id="presentations-target">
+        <h2 class="flow-container">Presentations</h2>
+        <div class="flow-container">
+          <a target="_blank" rel="noopener" href="">
+            <img class="center" src="" alt="Presentations">
+          </a>
+        </div>
+        <button class="center toLanding">Return</button>
+      </div>
+
+
     </overlay>
   </div>
 
+  <script src="./js/background.js"></script>
   <script src="./js/portfolio.js"></script>
+  <script src="./web-335/shepherd-diagrams.js"></script>
 </body>
 
 </html>
