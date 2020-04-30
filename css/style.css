@@ -59,7 +59,7 @@ a img {
 
 .flow-container {
   width: 100%;
-  padding-bottom: 2%;
+  padding-bottom: 5%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
@@ -79,9 +79,10 @@ a img {
   min-height: 40px;
   cursor: pointer;
   display: block;
-  position: fixed;
+  position: absolute;
   top: 10px;
   left: 20px;
+  z-index: -1;
 }
 
 .center {
@@ -89,6 +90,12 @@ a img {
   margin-left: auto;
   margin-right: auto;
   max-width: 50%;
+}
+
+.image-gallery {
+  margin-top: 5%;
+  max-height: 90%;
+  width: 100%;
 }
 
 .modal a {
@@ -104,9 +111,9 @@ a img {
 }
 
 .tagline {
+  font-style: oblique;
   text-align: center;
-  text-transform: uppercase;
-  margin-top: 20px;
+  margin-top: 2%;
   padding: 5px;
 }
 
@@ -124,10 +131,13 @@ a img {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: bold;
 }
+
 .toGallery {
+  background-color: rgba(255, 255, 255, 0.6);
   color: #efac69;
   border: none;
-  border-top: solid;
+  border-radius: 8px;
+  margin-top: 2%;
 }
 
 .toLanding {
@@ -144,8 +154,6 @@ a img {
   height: 40px;
 }
 
-
-
 @media only screen and (max-width: 400px) {
   #toLanding {
     border: none;
@@ -159,15 +167,26 @@ a img {
   justify-content: center;
 }
 
-#landing {
-  margin-top: 15%;
-  position: relative;
+#diagrams-target {
+  /*margin: 5% 0;*/
+  display: none;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+#presentations-target {
+  display: none;
+  flex-flow: column nowrap;
+  justify-content: center;
 }
 
 #gallery {
-  margin-top: 5%;
   display: none;
-  width: 100%;
+}
+
+#landing {
+  margin-top: 12%;
+  position: relative;
 }
 
 #backCanvas {
