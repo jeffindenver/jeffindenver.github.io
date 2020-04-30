@@ -1,0 +1,6 @@
+{
+  "name": "Joe Average",
+  "birthdate": "1985-03-11T12:00:00.000-05:00",
+  "roles": ["admin"],
+  "dependents": []
+}
