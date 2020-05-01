@@ -15,12 +15,12 @@ background.draw();
 let animationID = background.startTimers();
 
 let diagramList = [{
-  href: "nosql-data-diagrams/nosql-data-structure.PNG",
-  src: "./images/nosql-data-structure200x200.PNG",
+  href: "nosql-data-diagrams/nosql-data-structure.png",
+  src: "./images/nosql-data-structure200x200.png",
   alt: "JSON example"
 }, {
-  href: "nosql-data-diagrams/assignment1.4-ord.PNG",
-  src: "./images/ORD200x200.PNG",
+  href: "nosql-data-diagrams/assignment1.4-ord.png",
+  src: "./images/ORD200x200.png",
   alt: "UML Diagram"
 }];
 
