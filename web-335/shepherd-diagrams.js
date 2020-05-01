@@ -27,7 +27,7 @@ function ImageGrid() {
       let output = `
         <div class="flow-container">
           <a target="_blank" rel="noopener" href=${item.href}>
-            <img class="center" src=${item.src} alt=${item.alt}>
+            <img src=${item.src} alt=${item.alt}>
           </a>
         </div>`;
         targetElement.append(output);
