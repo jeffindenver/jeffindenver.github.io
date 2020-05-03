@@ -24,9 +24,17 @@ let diagramList = [{
   alt: "UML Diagram"
 }];
 
+let presentationList = [{
+  src: "./restful-api-presentations/rest-video.mp4",
+  alt: "video presentation. No audio",
+  width: "852"
+}];
+
 $(function () {
   let diagrams = new ImageGrid();
+  let videos = new VideoGrid();
   diagrams.insertHTML(diagramList, $("#diagrams-target"));
+  videos.insertHTML(presentationList, $("#presentations-target"));
 
   let currentScene = $("#landing");
 
