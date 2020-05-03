@@ -85,7 +85,7 @@ a img {
   min-height: 40px;
   cursor: pointer;
   display: block;
-  position: absolute;
+  position: fixed;
   top: 10px;
   left: 20px;
   z-index: -1;
@@ -266,7 +266,7 @@ a img {
   justify-content: space-between;
   min-width: 200px;
   min-height: 200px;
-  background-color: #ba9f60;
+  background-color: #e5c36b;
   margin-left: 2%;
   margin-top: 5%;
   padding: 5%;
