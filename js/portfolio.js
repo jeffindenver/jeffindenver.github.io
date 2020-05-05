@@ -50,7 +50,7 @@ $(function () {
   let diagrams = new ImageGrid();
   let videos = new VideoGrid();
   diagrams.insertHTML(diagramList, $("#diagram-gallery"));
-  videos.insertHTML(presentationList, $("#presentations-target"));
+  videos.insertHTML(presentationList, $("#presentation-gallery"));
 
   let currentScene = $("#landing");
 

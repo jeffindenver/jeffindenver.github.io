@@ -88,7 +88,6 @@ a img {
   position: fixed;
   top: 10px;
   left: 20px;
-  z-index: -1;
 }
 
 .center {

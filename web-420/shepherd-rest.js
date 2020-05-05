@@ -17,7 +17,6 @@ function VideoGrid() {
   * Response: appends html to the jQuery element
   * Description: takes a list of objects, wraps them in html,
   * and then inserts the html at the end of the target element.
-  * Finally, adds a navigation button.
   */
   this.insertHTML = function (itemList, targetElement) {
 
@@ -33,7 +32,7 @@ function VideoGrid() {
         targetElement.append(output);
     }
 
-    targetElement.append(`<button class="center toLanding">Return</button>`);
+    // targetElement.append(`<button class="center toLanding">Return</button>`);
   };
 
 }
