@@ -25,7 +25,7 @@ function ImageGrid() {
 
     function buildHTML(item) {
       let output = `
-        <div class="flow-container">
+        <div>
           <a target="_blank" rel="noopener" href=${item.href}>
             <img src=${item.src} alt=${item.alt}>
           </a>
