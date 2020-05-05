@@ -30,6 +30,14 @@ let diagramList = [{
   href: "nosql-data-diagrams/ORD-assignment2.2.png",
   src: "./images/diagram_thumb_four.png",
   alt: "UML Diagram"
+}, {
+  href: "nosql-data-diagrams/NoSQL-data-structure-assignment2.3.png",
+  src: "./images/diagram_thumb_five.png",
+  alt: "JSON example"
+}, {
+  href: "nosql-data-diagrams/ORD-assignment2.3.png",
+  src: "./images/diagram_thumb_six.png",
+  alt: "UML Diagram"
 }];
 
 let presentationList = [{
@@ -41,7 +49,7 @@ let presentationList = [{
 $(function () {
   let diagrams = new ImageGrid();
   let videos = new VideoGrid();
-  diagrams.insertHTML(diagramList, $("#diagrams-target"));
+  diagrams.insertHTML(diagramList, $("#diagram-gallery"));
   videos.insertHTML(presentationList, $("#presentations-target"));
 
   let currentScene = $("#landing");

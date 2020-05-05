@@ -12,28 +12,28 @@ function ImageGrid() {
   "use strict";
 
   /*
-  * Params: itemList is an array of objects
-  *         targetElement is a jQuery object
-  * Response: appends html to the jQuery element
-  * Description: takes a list of objects, wraps them in html,
-  * and then inserts the html at the end of the target element.
-  * Finally, adds a navigation button.
-  */
+   * Params: itemList is an array of objects
+   *         targetElement is a jQuery object
+   * Response: appends html to the jQuery element
+   * Description: takes a list of objects, wraps them in html,
+   * and then inserts the html at the end of the target element.
+   * Finally, adds a navigation button.
+   */
   this.insertHTML = function (itemList, targetElement) {
 
     itemList.forEach(buildHTML);
 
     function buildHTML(item) {
       let output = `
-        <div>
+      <div>
           <a target="_blank" rel="noopener" href=${item.href}>
             <img src=${item.src} alt=${item.alt}>
           </a>
-        </div>`;
-        targetElement.append(output);
+      </div>`;
+      targetElement.append(output);
     }
 
-    targetElement.append(`<button class="center toLanding">Return</button>`);
+    //targetElement.append(`<button class="center toLanding">Return</button>`);
   };
 
 }

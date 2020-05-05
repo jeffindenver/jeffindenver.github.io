@@ -177,13 +177,11 @@ a img {
 
 #diagrams-target {
   display: none;
-  flex-flow: column nowrap;
   justify-content: center;
 }
 
 #presentations-target {
   display: none;
-  flex-flow: column nowrap;
   justify-content: center;
 }
 
