@@ -43,7 +43,11 @@ let diagramList = [{
 let presentationList = [{
   src: "./restful-api-presentations/rest-video.mp4",
   alt: "video presentation. No audio",
-  width: "852"
+  width: "426"
+}, {
+  src: "./restful-api-presentations/restful-api-video.mp4",
+  alt: "video presentation. No audio",
+  width: "426"
 }];
 
 $(function () {
