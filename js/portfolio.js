@@ -32,7 +32,7 @@ $(function () {
     currentScene = $("#gallery");
   });
 
-  $(".toLanding").click(() => {
+  $(".toLanding, #home").click(() => {
     currentScene.hide();
     $("#landing").fadeIn(600);
     currentScene = $("#landing");

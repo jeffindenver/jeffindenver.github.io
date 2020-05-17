@@ -155,17 +155,19 @@ a img {
   height: 204px;
 }
 
+@media only screen and (max-width: 400px) {
+  .toLanding {
+    border: none;
+  }
+}
+
 #hamburger {
   border: none;
   width: 40px;
   height: 40px;
 }
 
-@media only screen and (max-width: 400px) {
-  #toLanding {
-    border: none;
-  }
-}
+
 
 #about-me {
   margin-top: 10%;
