@@ -10,9 +10,9 @@
 
 "use strict";
 
-let background = new Background();
+const background = new Background();
 background.draw();
-let animationID = background.startTimers();
+const animationID = background.startTimers();
 
 const data = new Data();
 const diagramList = data.getDiagramList();
