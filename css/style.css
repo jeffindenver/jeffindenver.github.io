@@ -54,6 +54,10 @@ a img {
   }
 }
 
+video {
+  padding: 5px;
+}
+
 .center {
   margin: auto;
 }

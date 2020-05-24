@@ -73,6 +73,11 @@ function Data() {
         src: "./restful-api-presentations/soap-video.mp4",
         alt: "video presentation, No audio",
         width: "426"
+      },
+      {
+        src: "./restful-api-presentations/json-api.mp4",
+        alt: "video presentation, No audio",
+        width: "426"
       }
     ]
   };

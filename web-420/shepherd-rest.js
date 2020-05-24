@@ -24,11 +24,9 @@ function VideoGrid() {
 
     function buildHTML(item) {
       let output = `
-        <div class="flow-container">
           <video controls reload="none" style="width: ${item.width};">
             <source src=${item.src} type="video/mp4" alt=${item.alt}>
-          </video>
-        </div>`;
+          </video>`;
         targetElement.append(output);
     }
 
