@@ -78,6 +78,11 @@ function Data() {
         src: "./restful-api-presentations/json-api.mp4",
         alt: "video presentation, No audio",
         width: "426"
+      },
+      {
+        src: "./restful-api-presentations/hypermedia-video.mp4",
+        alt: "video presentation, no audio",
+        width: "426"
       }
     ]
   };
