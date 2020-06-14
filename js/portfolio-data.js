@@ -83,6 +83,11 @@ function Data() {
         src: "./restful-api-presentations/hypermedia-video.mp4",
         alt: "video presentation, no audio",
         width: "426"
+      },
+      {
+        src: "./restful-api-presentations/SOA-ESB-video.mp4",
+        alt: "video presentation, no audio",
+        width: "426"
       }
     ]
   };
