@@ -91,7 +91,12 @@ function Data() {
       },
       {
         src: "./restful-api-presentations/microservices-video.mp4",
-        alt: "vide presentation, no audio",
+        alt: "video presentation, no audio",
+        width: "426"
+      },
+      {
+        src: "./restful-api-presentations/value-stream-video.mp4",
+        alt: "video presentation, no audio",
         width: "426"
       }
     ]
