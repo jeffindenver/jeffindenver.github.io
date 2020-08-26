@@ -33,18 +33,18 @@ function Background() {
     let gradient = backContext.createLinearGradient(0, 0, 0, screenHeight);
 
     gradient.addColorStop(0, "#ffffff");
-    gradient.addColorStop(1, "#eac672")
+    gradient.addColorStop(1, "#93f981");
 
     backContext.fillStyle = gradient;
     backContext.fillRect(0, 0, screenWidth, screenHeight);
 
-    square1 = new Component(20, 20, "gold", Math.floor(screenWidth * 0.15), 150);
-    square2 = new Component(10, 10, "gold", Math.floor(screenWidth * 0.25), 100);
-    square3 = new Component(100, 100, "gold", Math.floor(screenWidth * 0.55), 50);
-    square4 = new Component(15, 15, "gold", Math.floor(screenWidth * 0.90), 250);
+    square1 = new Component(20, 20, "#f98193", Math.floor(screenWidth * 0.15), 150);
+    square2 = new Component(10, 10, "#f98193", Math.floor(screenWidth * 0.25), 100);
+    square3 = new Component(100, 100, "#f98193", Math.floor(screenWidth * 0.55), 50);
+    square4 = new Component(15, 15, "#f98193", Math.floor(screenWidth * 0.90), 250);
 
     const numOfSquares = 400;
-    let color = "#f7f0cf";
+    let color = "#fceaed";
 
     for (let i = 0; i < numOfSquares; i++) {
       let dimension = getRandomNumber([4, 10]);
@@ -65,7 +65,7 @@ function Background() {
       }, delay);
       return animationID;
     }
-    return startAnimation("Gold");
+    return startAnimation("Coral");
   }
 
   function Component(width, height, color, x, y) {
