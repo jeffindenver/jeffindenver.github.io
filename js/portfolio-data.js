@@ -59,74 +59,82 @@ function Data() {
   };
 
   this.getPresentationList = function () {
+    const videoPath = "./restful-api-presentations/";
+    const altText = "video presentation. No audo";
+
     return [{
-        src: "./restful-api-presentations/rest-video.mp4",
-        alt: "video presentation. No audio",
+        src:  videoPath + "rest-video.mp4",
+        alt: altText,
         width: "426"
       },
       {
-        src: "./restful-api-presentations/restful-api-video.mp4",
-        alt: "video presentation. No audio",
+        src: videoPath + "restful-api-video.mp4",
+        alt: altText,
         width: "426"
       },
       {
-        src: "./restful-api-presentations/soap-video.mp4",
-        alt: "video presentation, No audio",
+        src:  videoPath + "soap-video.mp4",
+        alt: altText,
         width: "426"
       },
       {
-        src: "./restful-api-presentations/json-api.mp4",
-        alt: "video presentation, No audio",
+        src:  videoPath + "json-api.mp4",
+        alt: altText,
         width: "426"
       },
       {
-        src: "./restful-api-presentations/hypermedia-video.mp4",
-        alt: "video presentation, no audio",
+        src:  videoPath + "hypermedia-video.mp4",
+        alt: altText,
         width: "426"
       },
       {
-        src: "./restful-api-presentations/SOA-ESB-video.mp4",
-        alt: "video presentation, no audio",
+        src:  videoPath + "SOA-ESB-video.mp4",
+        alt: altText,
         width: "426"
       },
       {
-        src: "./restful-api-presentations/microservices-video.mp4",
-        alt: "video presentation, no audio",
+        src:  videoPath + "microservices-video.mp4",
+        alt: altText,
         width: "426"
       },
       {
-        src: "./restful-api-presentations/value-stream-video.mp4",
-        alt: "video presentation, no audio",
+        src: videoPath + "value-stream-video.mp4",
+        alt: altText,
         width: "426"
       },
       {
-        src: "./restful-api-presentations/two-pizza-video.mp4",
-        alt: "video presentation, no audio",
+        src: videoPath + "two-pizza-video.mp4",
+        alt: altText,
         width: "426"
       },
       {
-        src: "./restful-api-presentations/automated-testing-video.mp4",
-        alt: "video presentation, no audio",
+        src: videoPath + "automated-testing-video.mp4",
+        alt: altText,
         width: "426"
       },
       {
-        src: "./restful-api-presentations/continuous-integration-video.mp4",
-        alt: "video presentation, no audio",
+        src: videoPath + "continuous-integration-video.mp4",
+        alt: altText,
         width: "426"
       },
       {
-        src: "./restful-api-presentations/pager-rotation-duty-video.mp4",
-        alt: "video presentation, no audio",
+        src: videoPath + "pager-rotation-duty-video.mp4",
+        alt: altText,
         width: "426"
       },
       {
-        src: "./restful-api-presentations/approval-process-video.mp4",
-        alt: "video presentation, no audio",
+        src: videoPath + "approval-process-video.mp4",
+        alt: altText,
         width: "426"
       },
       {
-        src: "./restful-api-presentations/technology-versus-business-video.mp4",
-        alt: "video presentation, no audio",
+        src: videoPath + "technology-versus-business-video.mp4",
+        alt: altText,
+        width: "426"
+      },
+      {
+        src: videoPath + "security-controls-video.mp4",
+        alt: altText,
         width: "426"
       }
 
