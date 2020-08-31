@@ -62,10 +62,7 @@ video {
   background-color: rgba(255, 255, 255, 0.4);
   padding: 20px;
   border-radius: 5px;
-}
-
-.center {
-  margin: auto;
+  max-width: 70%;
 }
 
 .container {
@@ -104,7 +101,7 @@ video {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 50%;
+  max-width: 60%;
 }
 
 .image-gallery {
@@ -180,7 +177,7 @@ video {
 }
 
 #about-me {
-  margin-top: 10%;
+  margin-top: 5%;
   display: none;
   flex-flow: column nowrap;
   justify-content: center;
