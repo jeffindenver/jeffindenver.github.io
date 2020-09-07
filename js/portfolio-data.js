@@ -136,6 +136,11 @@ function Data() {
         src: videoPath + "security-controls-video.mp4",
         alt: altText,
         width: "426"
+      },
+      {
+        src: videoPath + "change-management-video.mp4",
+        alt: altText,
+        width: "426"
       }
 
     ]
