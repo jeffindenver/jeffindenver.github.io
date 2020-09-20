@@ -60,7 +60,8 @@ function Background() {
 
     function startAnimation(color) {
       console.log(`${color} animation begun.`);
-      let animationID = setInterval(() => {
+      let animationID;
+      animationID = setInterval(() => {
         updateForeground();
       }, delay);
       return animationID;
