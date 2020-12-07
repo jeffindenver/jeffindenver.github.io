@@ -1,6 +1,6 @@
 /*
 ===============================================================================
-; Title:  shepherd-diagrams.js
+; Title:  image-grid.js
 ; Author: Jeff Shepherd
 ; Date:   4/29/2020
 ; Modified By:
@@ -15,7 +15,7 @@ function ImageGrid() {
    * Params: itemList is an array of objects
    *         targetElement is a jQuery object
    * Response: appends html to the jQuery element
-   * Description: takes a list of objects, wraps them in html,
+   * Description: takes a list of objects and incorporates them into html,
    * and then inserts the html at the end of the target element.
    */
   this.insertHTML = function (itemList, targetElement) {
@@ -31,8 +31,6 @@ function ImageGrid() {
       </div>`;
       targetElement.append(output);
     }
-
-    //targetElement.append(`<button class="center toLanding">Return</button>`);
   };
 
 }

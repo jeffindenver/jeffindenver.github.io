@@ -1,12 +1,10 @@
-/*
-===============================================================================
-; Title:  portfolio.js
-; Author: Jeff Shepherd
-; Date:   3/16/2020
-; Modified By:
-; Description: javascript file for the portfolio project
-;==============================================================================
-*/
+/*******************************************************************************
+* Title:  portfolio.js
+* Author: Jeff Shepherd
+* Date:   3/16/2020
+* Modified By:
+* Description: javascript file for the portfolio project
+*******************************************************************************/
 
 "use strict";
 
@@ -67,9 +65,8 @@ $(function () {
     $("#myModal").css("display", "none");
   });
 
-  $(window).click(() => {
-    console.log("window clicked on " + event.target.toString());
-    if (event.target === document.getElementById("myModal")) {
+  $(window).click((evt) => {
+    if (evt.target === document.getElementById("myModal")) {
       $("#myModal").fadeOut(1000);
     }
   });

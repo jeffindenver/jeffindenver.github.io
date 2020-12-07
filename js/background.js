@@ -14,8 +14,11 @@ function Background() {
   let screenWidth = window.innerWidth;
   let screenHeight = window.innerHeight;
 
-  let backCanvas = document.getElementById("backCanvas");
-  let foreCanvas = document.getElementById("foreCanvas");
+  let container = document.getElementsByClassName("container")[0];
+  let backCanvas = document.createElement("canvas");
+  let foreCanvas = document.createElement("canvas");
+  container.append(backCanvas);
+  container.append(foreCanvas);
 
   let backContext = backCanvas.getContext("2d");
   let foreContext = foreCanvas.getContext("2d");

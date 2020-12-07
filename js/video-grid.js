@@ -1,6 +1,6 @@
 /*
 ===============================================================================
-; Title:  shepherd-rest.js
+; Title:  video-grid.js
 ; Author: Jeff Shepherd
 ; Date:   4/29/2020
 ; Modified By:
@@ -30,7 +30,6 @@ function VideoGrid() {
         targetElement.append(output);
     }
 
-    // targetElement.append(`<button class="center toLanding">Return</button>`);
   };
 
 }
