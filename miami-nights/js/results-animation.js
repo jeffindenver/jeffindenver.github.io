@@ -1,3 +1,11 @@
+/*******************************************************************************
+* Title:  results-animation.js
+* Author: Jeff Shepherd
+* Modified By:
+* Date:   3/14/2020
+* Description: Displays an animation and results
+*******************************************************************************/
+
 function ResultAnimation(theScore) {
 
   "use strict";

@@ -1,13 +1,11 @@
-/*
-===============================================================================
-; Title:  theModel.js
-; Author: Jeff Shepherd, Janet Blohn
-; Modified By:
-; Date:   3/14/2020
-; Description: The model (Data) for the JavaScript Quiz.
-; Use for data and validation only
-;==============================================================================
-*/
+/*******************************************************************************
+* Title:  theModel.js
+* Author: Jeff Shepherd, Janet Blohn
+* Modified By:
+* Date:   3/14/2020
+* Description: The model (Data) for the JavaScript Quiz.
+* Use for data and validation only
+*******************************************************************************/
 
 function QuizModel() {
   "use strict";
@@ -15,7 +13,7 @@ function QuizModel() {
   function Question(id, question, correctAnswer, possibleAnswers) {
     this.id = id; //string
     this.question = question; //string
-    this.possibleAnswers = possibleAnswers; //answer object literal (string, string)
+    this.possibleAnswers = possibleAnswers; //answer {string : string}
     this.correctAnswer = correctAnswer; //string
     this.userAnswer = ""; //string
   }
@@ -52,7 +50,8 @@ function QuizModel() {
           "c": "c) System, Grammatical, and User"
         }),
       new Question(
-        "4", "Which method returns an array containing a subset of the elements of the array on which it is invoked?",
+        "4", "Which method returns an array containing a subset of the elements \
+        of the array on which it is invoked?",
         "b", {
           "a": "a) Map",
           "b": "b) Filter",
@@ -73,7 +72,8 @@ function QuizModel() {
           "c": "c) Try/Catch/Finally Statement"
         }),
       new Question(
-        "7", "What are comma-separated lists of colon-separated name value pairs known as?",
+        "7", "What are comma-separated lists of colon-separated name value pairs \
+        known as?",
         "a", {
           "a": "a) Object Literals",
           "b": "b) Arrays",

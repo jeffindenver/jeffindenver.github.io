@@ -1,3 +1,12 @@
+/*******************************************************************************
+* Title:  controller.js
+* Author: Jeff Shepherd
+* Modified By:
+* Date:   3/14/2020
+* Description: The controller instantiates the model and viewModel, applies
+* knockout bindings, and handles jquery events
+*******************************************************************************/
+
 let model = new QuizModel();
 let viewModel = new ViewModel(model);
 viewModel.buildHtml();

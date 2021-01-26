@@ -1,3 +1,11 @@
+/*******************************************************************************
+* Title:  canvas-script.js
+* Author: Jeff Shepherd
+* Modified By:
+* Date:   3/14/2020
+* Description: draws the background
+*******************************************************************************/
+
 let screenWidth = window.innerWidth;
 let screenHeight = window.innerHeight - 200;
 
