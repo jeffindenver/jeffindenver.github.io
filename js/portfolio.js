@@ -7,8 +7,8 @@
 *******************************************************************************/
 
 "use strict";
-
-const background = new Background();
+const bgs = new BackgroundService();
+const background = bgs.create("tron");
 background.draw();
 const animationID = background.startTimers();
 

@@ -8,7 +8,7 @@
 ;==============================================================================
 */
 
-function Background() {
+function MintyBackground() {
   "use strict";
 
   let screenWidth = window.innerWidth;
