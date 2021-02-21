@@ -32,11 +32,26 @@ function TronBackground() {
 
     let gradient = backContext.createLinearGradient(0, 0, 0, screenHeight);
 
-    gradient.addColorStop(0, "#353535");//19161e
-    gradient.addColorStop(1, "#19161e");//353535
+    gradient.addColorStop(0, "#191226");//19161e
+    gradient.addColorStop(1, "#2e2533");//353535
 
     backContext.fillStyle = gradient;
     backContext.fillRect(0, 0, screenWidth, screenHeight);
+
+    let color = "#6b0a9b"; // previous #0cfff6, #26c9ae
+    let lineX = 0;
+    let lineY = screenHeight;
+    let widths = [40, 35, 30, 25, 20, 15, 10, 8, 5, 3, 2, 1]
+
+    for (let i = 0; i < 12; i++) {
+      foreContext.beginPath();
+      foreContext.lineWidth = widths[i];
+      foreContext.strokeStyle = color;
+      foreContext.moveTo(lineX, lineY);
+      foreContext.lineTo(screenWidth, lineY);
+      foreContext.stroke();
+      lineY-= 20;
+    }
 
   };
 

@@ -54,6 +54,16 @@ function Data() {
         href: imagePath + "ORD-assignment3.3.png",
         src: thumbnailPath + "diagram_thumb_ten.png",
         alt: "UML diagram"
+      },
+      {
+        href: "#void",
+        src: thumbnailPath + "placeholder.png",
+        alt: "placeholder"
+      },
+      {
+        href: "#void",
+        src: thumbnailPath + "placeholder.png",
+        alt: "placeholder"
       }
     ];
   };

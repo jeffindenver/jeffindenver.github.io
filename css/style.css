@@ -59,7 +59,7 @@ video {
 }
 
 .about-backdrop {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.6);
   padding: 20px;
   border-radius: 5px;
   max-width: 70%;
@@ -72,6 +72,7 @@ video {
 .flow-container {
   margin: auto;
   width: 100%;
+  max-width: 800px;
   padding-bottom: 2%;
   display: flex;
   flex-flow: row wrap;
@@ -142,7 +143,7 @@ video {
 .toGallery,
 .toLanding {
   cursor: pointer;
-  background: none;
+  background-color: #191226;
   font-size: 3.157em;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: bold;
@@ -273,7 +274,7 @@ video {
   justify-content: space-between;
   min-width: 200px;
   min-height: 200px;
-  background-color: #fceaed;
+  background-color: #504a56;
   margin-left: 2%;
   margin-top: 5%;
   padding: 5%;
