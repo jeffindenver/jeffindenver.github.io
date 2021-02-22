@@ -56,12 +56,12 @@ function Data() {
         alt: "UML diagram"
       },
       {
-        href: "#void",
+        href: imagePath + "placeholder.png",
         src: thumbnailPath + "placeholder.png",
         alt: "placeholder"
       },
       {
-        href: "#void",
+        href: imagePath + "placeholder.png",
         src: thumbnailPath + "placeholder.png",
         alt: "placeholder"
       }
