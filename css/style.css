@@ -33,6 +33,15 @@ h2 {
   margin: 0;
 }
 
+@media only screen and (max-width: 526px) {
+  h1 {
+    font-size: 2.369em;
+  }
+  h2 {
+    font-size: 1.777em;
+  }
+}
+
 canvas {
   width: 100%;
   min-height: 100%;
