@@ -16,7 +16,7 @@ div {
 h1 {
   color: #86edef;
   font-size: 4.209em;
-  font-family: 'Fugaz One', cursive;
+  font-family: 'Spartan', sans-serif;
   text-shadow: 2px 2px 1px #000000;
 }
 
@@ -124,11 +124,10 @@ video {
 }
 
 .subhead {
-  letter-spacing: 8px;
+  letter-spacing: 4px;
 }
 
 .tagline {
-  font-style: oblique;
   text-align: center;
   margin-bottom: 2%;
 }
