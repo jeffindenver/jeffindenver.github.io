@@ -20,6 +20,9 @@ function BackgroundService() {
       case "minty":
         aBackground = new MintyBackground();
         break;
+      case "style":
+        aBackground = new StyleBackground();
+        break;
       default:
         aBackground = new MintyBackground();
     }
