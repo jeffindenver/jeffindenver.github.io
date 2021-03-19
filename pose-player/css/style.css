@@ -1,0 +1,228 @@
+/*
+colors
+yellow: #edf731
+green: #8af731
+orange: #f79e31
+dark grey: #2b2b2b
+
+Scale 1.250 - major third
+3.052rem/48.83px
+2.441rem/39.06px
+1.953rem/31.25px
+1.563rem/25.00px
+1.25rem/20.00px
+1rem/16.00px
+0.8rem/12.80px
+0.64rem/10.24px
+0.512rem/8.19px
+0.41rem/6.55px
+
+*/
+
+*:focus {
+  outline: none;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #2b2b2b;
+  margin: 0;
+  border: 0;
+  overflow: hidden;
+}
+
+button {
+  background-color: lightgrey;
+  border-radius: 5px;
+}
+
+h1 {
+  font-family: 'Fredericka the Great', Helvetica;
+  /* font-family: 'Cabin Sketch', Helvetica; */
+  text-align: center;
+  color: #2b2b2b;
+}
+
+img {
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 100px;
+  height: auto;
+  max-width: 900px;
+  max-height: 900px;
+}
+
+nav {
+  float: left;
+  background-image: linear-gradient(to bottom, #8af731, #f79e31);
+  background-color: #2b2b2b;
+  position: absolute;
+  padding: 10px;
+  width: 200px;
+  height: 99%;
+  margin-right: 5px;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+}
+
+.clock {
+  position: relative;
+  top: 140px;
+}
+
+.copyright {
+  width: 165px;
+  text-align: center;
+  display: block;
+  position: absolute;
+  bottom: 20px;
+}
+
+.flex-start-container {
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex-end-container {
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.instructions, .notifications {
+  font-size: small;
+  display: block;
+  position: absolute;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.instructions {
+  top: 260px;
+}
+
+.notifications {
+  display: none;
+  top: 400px;
+  background-color: #edf731;
+  border-style: solid;
+  border-width: 1px;
+  border-color: red;
+  border-radius: 5px;
+  width: 185px;
+  padding: 2px;
+}
+
+.pickDirectory::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.pickDirectory::before {
+  background-color: #f79e31;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  padding: 20px;
+  width: 150px;
+  max-width: 160px;
+  text-align: center;
+  content: 'select directory';
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16pt;
+  position: absolute;
+  bottom: 20;
+}
+
+.pickDirectory:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+.pickRandom {
+  display: block;
+  position: absolute;
+  top: 240px;
+}
+
+.playbackControlContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 10px;
+  border: black;
+  border-style: solid;
+  margin-left: auto;
+  margin-right: auto;
+  width: 165px;
+  position: absolute;
+  top: 500px;
+  padding: 10px;
+}
+
+.play-and-step-container {
+  background-color: rgb(24, 88, 67);
+  height: 90px;
+  position: relative;
+  top: 60%;
+  width: 80%;
+  border-radius: 10px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.playbackControl {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.stepControl {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* Type Scaling */
+html {font-size: 100%;} /*16px*/
+
+body {
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+p {margin-bottom: 1rem;}
+
+h1, h2, h3, h4, h5 {
+  margin: 3rem 0 1.38rem;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {font-size: 2.441rem;}
+
+h3 {font-size: 1.953rem;}
+
+h4 {font-size: 1.563rem;}
+
+h5 {font-size: 1.25rem;}
+
+small, .text_small {font-size: 0.8rem;}
