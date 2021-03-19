@@ -51,9 +51,6 @@ canvas {
 }
 
 a img {
-  border-style: solid;
-  border-width: 2px;
-  border-color: darkslategray;
   margin: 0 10px;
 }
 
@@ -72,6 +69,13 @@ video {
   padding: 20px;
   border-radius: 5px;
   max-width: 70%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60%;
 }
 
 .container {
@@ -97,6 +101,21 @@ video {
   }
 }
 
+.gallery-card {
+  margin: 10px;
+  padding-top: 5px;
+  height: 290px;
+  max-height: 290px;
+  max-width: 224px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 2px;
+  font-size: .75rem;
+}
+
+.garllery-card-text {
+  padding: 10px
+}
+
 .hamburger-holder {
   min-width: 40px;
   min-height: 40px;
@@ -105,13 +124,6 @@ video {
   position: fixed;
   top: 10px;
   left: 20px;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 60%;
 }
 
 .image-gallery {

@@ -14,7 +14,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./css/style.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -48,24 +49,48 @@
       <div id="gallery" class="image-gallery">
         <h2 class="tagline center">Gallery</h2>
         <div class="flow-container">
-          <a target="_blank" rel="noopener" href="miami-nights/index.html">
-            <img src="./images/miami-nights-thumb200x200.png" alt="Miami Nights Quiz"></a>
-          <a target="_blank" rel="noopener" href="https://jeffindenver.github.io/bioSite/">
-            <img src="./images/bio-site-thumb.png" alt="Bio Site Image"></a>
-          <a target="_blank" rel="noopener" href="https://github.com/jeffindenver/web-231/">
-            <img src="./images/web231-200x200.png" alt="Web 231 Image"></a>
-          <a target="_blank" rel="noopener" href="https://github.com/jeffindenver/web-330/">
-            <img src="./images/web330-200x200.png" alt="Web 330 Image"></a>
-          <a target="_blank" rel="noopener" href="https://group2-bcrs.herokuapp.com/">
-            <img src="./images/bcrs-200x200.png" alt="Bobs computer repair shop"></a>
-          <a target="_blank" rel="noopener" href="https://jeffindenver.github.io/enterprise-composer-app/">
-            <img src="./images/angular-logo.png" alt="Angular Application"></a>
-          <a target="_blank" rel="noopener" href="https://jeffindenver.github.io/gpa-calculator-app/">
-            <img src="./images/gpa-calculator-image.png" alt="Angular Application"></a>
-          <a target="_blank" rel="noopener" href="https://jeffindenver.github.io/in-n-out-books/">
-            <img src="./images/In-N-Out-Books.png" alt="Angular Application"></a>
-          <a target="_blank" rel="noopener" href="https://jeffindenver.github.io/bobs-computer-repair/">
-            <img src="./images/bobs-logo.png" alt="Angular Application"></a>
+          <div class="gallery-card">
+            <a target="_blank" rel="noopener" href="miami-nights/index.html">
+              <img src="./images/miami-nights-thumb200x200.png" alt="Miami Nights Quiz"></a>
+            <p class="gallery-card-text">A JavaScript quiz made with Knockoout JS and jQuery.</p>
+          </div>
+          <div class="gallery-card"> <a target="_blank" rel="noopener" href="https://jeffindenver.github.io/bioSite/">
+              <img src="./images/bio-site-thumb.png" alt="Bio Site Image"></a>
+            <p class="gallery-card-text">A static html site, my first.</p>
+          </div>
+
+          <div class="gallery-card"> <a target="_blank" rel="noopener" href="https://github.com/jeffindenver/web-231/">
+              <img src="./images/web231-200x200.png" alt="Web 231 Image"></a>
+            <p class="gallery-card-text">Github repo for the JavaScript I class.</p>
+          </div>
+          <div class="gallery-card"> <a target="_blank" rel="noopener" href="https://github.com/jeffindenver/web-330/">
+              <img src="./images/web330-200x200.png" alt="Web 330 Image"></a>
+            <p class="gallery-card-text">Gituhub repo for the JavaScript II class.</p>
+          </div>
+          <div class="gallery-card"> <a target="_blank" rel="noopener" href="https://group2-bcrs.herokuapp.com/">
+              <img src="./images/bcrs-200x200.png" alt="Bobs computer repair shop"></a>
+            <p class="gallery-card-text">Final project deployed on Heroku and built using MongoDB, Express, Angular, and Node.</p>
+          </div>
+          <div class="gallery-card"> <a target="_blank" rel="noopener"
+              href="https://jeffindenver.github.io/enterprise-composer-app/">
+              <img src="./images/angular-logo.png" alt="Angular Application"></a>
+            <p class="gallery-card-text">An Angular application demonstrating Async Pipes.</p>
+          </div>
+          <div class="gallery-card"> <a target="_blank" rel="noopener"
+              href="https://jeffindenver.github.io/gpa-calculator-app/">
+              <img src="./images/gpa-calculator-image.png" alt="Angular Application"></a>
+            <p class="gallery-card-text">An Angular application demonstrating reactive forms. </p>
+          </div>
+          <div class="gallery-card"> <a target="_blank" rel="noopener"
+              href="https://jeffindenver.github.io/in-n-out-books/">
+              <img src="./images/In-N-Out-Books.png" alt="Angular Application"></a>
+            <p class="gallery-card-text">An Angular application using Material design elements.</p>
+          </div>
+          <div class="gallery-card"> <a target="_blank" rel="noopener"
+              href="https://jeffindenver.github.io/bobs-computer-repair/">
+              <img src="./images/bobs-logo.png" alt="Angular Application"></a>
+            <p class="gallery-card-text">Bob's Computer Repair. Built using Express, Angular, and Node.</p>
+          </div>
         </div>
 
         <div class="flow-container" style="justify-content: flex-end;">
