@@ -22,7 +22,7 @@
     <div>
       <h1>Pose Player</h1>
       <input type="file" id="filepicker" class="pickDirectory" name="fileList" webkitdirectory multiple>
-      </input>
+      <label for="fileList" style="display: none">File chooser</label>
     </div>
 
     <div class="instructions">
@@ -32,7 +32,6 @@
 
     <div class="pickRandom">
       <input type="checkbox" name="randomizer" value="randomize?" checked>
-    </input>
       <label for="randomizer">Randomize order</label>
     </div>
 
@@ -64,19 +63,19 @@
           </div>
           <div>
             <input type="radio" id="sixhundred" name="timing" value=600>
-            <label for="threehundred">600</label>
+            <label for="sixhundred">600</label>
           </div>
         </div>
 
         <br>
         <div class="play-and-step-container">
           <p class="playbackControl">
-            <button class="play fa fa-play" alt="play button"></button>
-            <button class="pause fa fa-pause" alt="pause button"></button>
+            <button class="play fa fa-play" alt="play button" aria-label="play slideshow"></button>
+            <button class="pause fa fa-pause" alt="pause button" aria-label="pause slideshow"></button>
           </p>
           <p class="stepControl">
-            <button class="stepbackward fa fa-step-backward" alt="step backward"></button>
-            <button class="stepforward fa fa-step-forward" alt="step forward"></button>
+            <button class="stepbackward fa fa-step-backward" alt="step backward" aria-label="slideshow back one"></button>
+            <button class="stepforward fa fa-step-forward" alt="step forward" aria-label="slideshow forward one"></button>
           </p>
         </div>
         <br><br>
