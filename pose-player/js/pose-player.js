@@ -2,32 +2,31 @@
 
 $(function () {
 
+  // TODO: put the following variables in a PosePlayer object. Move functions
+  // that belong there.
+
+  // TODO: Improve clock visuals
+
   let duration = 60;
-  let index = 1;
+  let index = 0;
   let clockID;
   let originalImageList = [];
   let currentImageList = [];
   let currentPose = $("#image-target");
   let pose = $('<img>');
   let isRandom = true;
+  const FORWARD = 1;
+  const BACKWARD = -1;
 
-
-/*******************************************************************************
- * jQuery events
- ******************************************************************************/
+  /*******************************************************************************
+   * jQuery events
+   ******************************************************************************/
   $(".pickDirectory").change((event) => {
-
-    let files = event.target.files;
-    console.log("Number of files: " + files.length);
-
+    const files = event.target.files;
     resetOriginalList();
-
-    for (let i = 0; i < files.length; i++) {
-      originalImageList.push(URL.createObjectURL(files[i]));
-    }
-
+    buildImageList(files);
     setCurrentList();
-    notify("Select a time period for your quick poses.Then hit play.")
+    notify("Select a time period for your quick poses. Then hit play.");
     $(this).blur();
   });
 
@@ -44,7 +43,7 @@ $(function () {
   });
 
   $("input[type='checkbox'][name='randomizer']").change(() => {
-    // check if the list should be randomized
+    // check if user selected randomization
     if ($("input[type='checkbox'][name='randomizer']:checked").val()) {
       isRandom = true;
     } else {
@@ -55,6 +54,24 @@ $(function () {
   /*****************************************************************************
    * other functions
    ****************************************************************************/
+  function buildImageList(files) {
+    for (let i = 0; i < files.length; i++) {
+      if (isValidImage(files[i])) {
+        console.log(files[i].type);
+        originalImageList.push(URL.createObjectURL(files[i]));
+      }
+    }
+  }
+
+  function isValidImage(file) {
+    if (file.type === "image/jpeg" || "image/png") {
+      return true;
+    } else {
+      return false;
+    }
+
+  }
+
   function beginPlayer() {
     if (currentImageList.length < 1) {
       notify("Please first select a directory.");
@@ -75,15 +92,16 @@ $(function () {
 
   function stepForward() {
     clearInterval(clockID);
-    index++;
-    changeImage();
+    changeImage(FORWARD);
     startTimer();
   }
 
   function stepBackward() {
+    if (index === 0) {
+      return;
+    }
     clearInterval(clockID);
-    index--;
-    changeImage();
+    changeImage(BACKWARD);
     startTimer();
   }
 
@@ -118,27 +136,27 @@ $(function () {
   function startTimer() {
     clearInterval(clockID);
     let timeLeft = duration;
-    clockID = setInterval( () => {
+    clockID = setInterval(() => {
       timeLeft--;
       updateClock(timeLeft);
       if (timeLeft === 0) {
         clearInterval(clockID);
-        changeImage();
-        index++;
+        changeImage(FORWARD);
       }
     }, 1000);
-
-    console.log("Timer started");
   }
 
-  function changeImage() {
-    if (index === currentImageList.length) {
+  function changeImage(direction) {
+    index += direction;
+
+    if (index >= currentImageList.length) {
       index = 0;
     }
     if (index < 0) {
       index = currentImageList.length;
     }
     pose.attr("src", currentImageList[index]);
+    console.log("displaying image " + index);
     startTimer();
   }
 
@@ -153,7 +171,7 @@ $(function () {
   }
 
   function resetIndex() {
-    index = 1;
+    index = 0;
   }
 
   function resetOriginalList() {
