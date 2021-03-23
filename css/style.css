@@ -16,19 +16,18 @@ div {
 h1 {
   color: #86edef;
   font-size: 4.209em;
-  font-family: 'Spartan', sans-serif;
   text-shadow: 2px 2px 1px #000000;
 }
 
 h2 {
   color: #75cfd1;
   font-size: 3.157em;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: bold;
 }
 
 h1,
 h2 {
+  font-family: 'Spartan', sans-serif;
   padding: 0;
   margin: 0;
 }
